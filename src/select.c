@@ -15,6 +15,7 @@
 #include "sqliteInt.h"
 
 /*
+add  pengliping
 ** Trace output macros
 */
 #if SELECTTRACE_ENABLED
