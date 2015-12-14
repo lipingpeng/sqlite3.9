@@ -4655,7 +4655,7 @@ static void updateAccumulator(Parse *pParse, AggInfo *pAggInfo){
     int addrNext = 0;
     int regAgg;
     ExprList *pList = pF->pExpr->x.pList;
-    assert( !ExprHasProperty(pF->pExpr, EP_xIsSelect) );
+    assert( !ExprHasProperty(pF->pExpr, EP_xIsSelect) );//
     if( pList ){
       nArg = pList->nExpr;
       regAgg = sqlite3GetTempRange(pParse, nArg);
